@@ -2,7 +2,7 @@
 training:
   checkpoints_dir: 'ckpts'
   batch_size: 12
-  learning_rate_g: 2e-04
+  learning_rate_g: 2.0e-04
   end_epoch: 1000
   img_extension: '.png'
   image_size: 512
