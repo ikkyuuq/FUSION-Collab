@@ -1,6 +1,6 @@
 import math
 import numpy as np
-from spicy import ndimage
+from scipy import ndimage
 from scipy.ndimage import gaussian_filter
 from glob import glob
 from os.path import join, basename
