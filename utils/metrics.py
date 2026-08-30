@@ -1,6 +1,6 @@
 import math
 import numpy as np
-from scipy.ndimage import gaussian_filter
+from scipy.ndimage import gaussian_filter, ndimage
 from glob import glob
 from os.path import join, basename
 from PIL import Image
