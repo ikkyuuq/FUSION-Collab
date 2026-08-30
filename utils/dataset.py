@@ -162,25 +162,18 @@ class Dataset_Load(Dataset):
     def get_file_paths(self, root, dataset_name):
         try:
             root = os.path.join(root, dataset_name)
-            print("root:" + root)
             
             if dataset_name == 'EUVP':
                 filesA = sorted(glob.glob(os.path.join(root, 'raw', "*.*")))
-                print("found (raw):" + filesA)
                 filesB = sorted(glob.glob(os.path.join(root, 'ref', "*.*")))
-                print("found (ref):" + filesB)
                 
             elif dataset_name == 'SUIM-E':
                 filesA = sorted(glob.glob(os.path.join(root, 'raw', "*.*")))
-                print("found (raw):" + filesA)
                 filesB = sorted(glob.glob(os.path.join(root, 'ref', "*.*")))
-                print("found (ref):" + filesB)
                 
             elif dataset_name == 'UIEB':
                 filesA = sorted(glob.glob(os.path.join(root, 'raw', "*.*")))
-                print("found (raw):" + filesA)
                 filesB = sorted(glob.glob(os.path.join(root, 'ref', "*.*")))
-                print("found (ref):" + filesB)
                 
             else:
                 raise ValueError(f"Unsupported dataset name: {dataset_name}")
