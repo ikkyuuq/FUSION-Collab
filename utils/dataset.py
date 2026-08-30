@@ -164,16 +164,16 @@ class Dataset_Load(Dataset):
             root = os.path.join(root, dataset_name)
             
             if dataset_name == 'EUVP':
-                filesA = sorted(glob.glob(os.path.join(root, 'raw (A)', "*.*")))
-                filesB = sorted(glob.glob(os.path.join(root, 'reference (B)', "*.*")))
+                filesA = sorted(glob.glob(os.path.join(root, 'raw', "*.*")))
+                filesB = sorted(glob.glob(os.path.join(root, 'ref', "*.*")))
                 
             elif dataset_name == 'SUIM-E':
-                filesA = sorted(glob.glob(os.path.join(root, 'raw (A)', "*.*")))
-                filesB = sorted(glob.glob(os.path.join(root, 'reference (B)', "*.*")))
+                filesA = sorted(glob.glob(os.path.join(root, 'raw', "*.*")))
+                filesB = sorted(glob.glob(os.path.join(root, 'ref', "*.*")))
                 
             elif dataset_name == 'UIEB':
-                filesA = sorted(glob.glob(os.path.join(root, 'raw-890', "*.*")))
-                filesB = sorted(glob.glob(os.path.join(root, 'reference-890', "*.*")))
+                filesA = sorted(glob.glob(os.path.join(root, 'raw', "*.*")))
+                filesB = sorted(glob.glob(os.path.join(root, 'ref', "*.*")))
                 
             else:
                 raise ValueError(f"Unsupported dataset name: {dataset_name}")
