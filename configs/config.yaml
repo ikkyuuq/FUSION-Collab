@@ -17,14 +17,14 @@ training:
 dataset:
   train:
     EUVP:
-      raw: '/path/to/EUVP/raw (A)'
-      reference: '/path/to/EUVP/reference (B)'
+      raw: '/content/data/FUSION/EUVP/raw'
+      reference: '/content/data/FUSION/EUVP/ref'
     SUIM-E:
-      raw: '/path/to/SUIM-E/raw (A)'
-      reference: '/path/to/SUIM-E/reference (B)'
+      raw: '/content/data/FUSION/SUIM-E/raw'
+      reference: '/content/data/FUSION/SUIM-E/raw'
     UIEB:
-      raw: '/path/to/UIEB/raw-890'
-      reference: '/path/to/UIEB/reference-890'
+      raw: '/content/data/FUSION/UIEB/raw'
+      reference: '/content/data/FUSION/UIEB/ref'
   test:
     inp_dir: "/path/to/test/Inp"
     gt_dir: "/path/to/test/GTr"
