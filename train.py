@@ -13,7 +13,7 @@ from collections import namedtuple
 
 from models import EnhancedCC_Module
 from utils.dataset import Dataset_Load, ToTensor
-from utils.metrics import getUIQM, getSSIM, getPSNR
+from utils.metrics import getUIQM, getSSIM, getPSNR, _uism
 from utils.helpers import getLatestCheckpointName, get_lr
 from brisque import BRISQUE
 
